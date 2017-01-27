@@ -1,3 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color: #0C1D8C;
+	background-image: url("images/island.jpg");
+	background-size: 100%;
+	text-size: 100px;
+}
