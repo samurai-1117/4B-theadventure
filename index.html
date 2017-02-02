@@ -14,35 +14,26 @@
 <body>
 <!--Add your HTML here-->
 <h1>Stranded</h1>
-  
+ 
+<p id="peep"></p>
 
+<button onclick="myFunction('You were on a plane trip to Hawaii to visit family and friends. Everything was going smoothly until you see a strange blue mist form around the plane.')">Click to start</button>
+<script>
+function myFunction(name)
+{
+document.getElementById("peep").innerHTML = name;
+}
+</script>
 
+<p id="intro"></p>
 
-<div id="Start">
-	<p id="start"></p>
-
-	<button onclick="myFunction('You were on a plane trip to Hawaii to visit family and friends. Everything was going smoothly until you see a strange blue mist form around the plane.')">Click to start</button>
-
-	<script>
-	function myFunction(start)
-	{
-	document.getElementById("start").innerHTML = start;
-	}
-	</script>
-	</div>
-<div id="continue">
-	<button onclick="myFunction('You are now the only surviver of a plane crash which has landed you on an island you didn't even know existed.')">Continue</button>
-	<script>
-	function myFunction(continue1)
-	{
-		document.get
-	}
-	</script>
-</div>
-
-
-
-
+<button onclick="myFunction('You are now the only survivor of a plane crash which has landed you on an island you didn't even know existed.')">Click to continue</button>
+<script>
+function myFunction(names)
+{
+document.getElementById("intro").innerHTML = names;
+}
+</script>
 
 
 
