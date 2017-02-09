@@ -9,53 +9,19 @@
 <script type="text/javascript" src="webapp.js"></script>
 <!--jQuery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
 </head>
 
 <body>
 <!--Add your HTML here-->
 <h1>Stranded</h1>
- 
-<p id="peep"></p>
+			
 
-<button onclick="myFunction('You were on a plane trip to Hawaii to visit family and friends. Everything was going smoothly until you see a strange blue mist form around the plane. You are now the only survivor of the crash, your task is to survive. Are you up to the challenge? Or will you die? Alone. Stranded.')">Click to start</button>
-<script>
-function myFunction(name)
-{
-document.getElementById("peep").innerHTML = name;
-}
-</script>
-
-<p id="continue1"></p>
-
-<button onclick="myFunction('You wake up among the ruins of a very apparent plane crash. Pieces of the plane lay around you, some still in flames. You quickly pull yourself out of your stupor and run out of the rubble. In front of you there is a forest. You decide to go inside the forest to look for supplies. You see an apple on a tree. But it isn’t any normal apple. Its color is gold, shiny and tempting. Unable to tear your eyes away from it, you take the apple and follow the sound of running water to a river. There you see an animal drinking water from a lake. The creature is like a white wolf, but it has turquoise gems come out of its fur, in the area that might be a mane for a lion. After it looked up at you, it ran away. Suddenly you hear some noise like an animal moving around. You follow the noise to see an animal like a purple tiger with two long horns at the top of its head. It’s laying on a tree branch. What will you do? Will you fight it? Or will you pet it?')">Click to continue</button>
-<script>
-function myFunction(continue1)
-{
-document.getElementById("continue1").innerHTML = continue1;
-}
-</script>
-
-<p id="pet"></p>
-
-<button onclick="myFunction('You decide to pet the animal. Its fur feels silky to the touch and as you continue to study her, you decide to name her Lavender, because of the unique color of her fur. Lavender moves away from your touch and you follow her, curious to where she was going. She leads you to some stones. You couldn’t help but feel impressed as you begin to grasp her idea. You use the stones to cut down some trees in the area. You continue to cut the wood into smaller pieces and afterward gather leaves. After gathering all your materials, you use the wood and leaves to build a hut. You decide to go back to the plane to see if there are any metal pieces that you can use. But among the ruins of the plane crash, you see a very strange looking creature. It had the overall shape of a rhino, but it was green overall, with a very mossy look. Where the horns of a rhino would have been were two branches of flowers. When this creature notices you, it charges. What will you do? Will you dodge? Or will you try to stop it?')">Pet the animal</button>
-<script>
-function myFunction(pet_lavender)
-{
-document.getElementById("pet").innerHTML = pet_lavender;
-}
-</script>
-
-<p id="stop"></p>
-
-<button onclick="myFunction('You try to stop the charging creature, but it is in vain. The only result of it is that the branches stab into your body and you die. Alone. Stranded.')">Stop the animal</button>
-<script>
-function myFunction(stop_the_rhino)
-{
-document.getElementById("stop").innerHTML = stop_the_rhino;
-}
-</script>
-
-
+<div id="story">You were on a plane trip to Hawaii to visit family and friends. Everything was going smoothly until you see a strange blue mist form around the plane. ~~~ You are now the only survivor of a plane crash which has landed you on an island you didn't even know existed. You will now face many trials such as fighting monsters and defending for yourself. Are you up for the challenge? Or will you die on this island? Alone. Stranded.
+</div>
+<div id="buttons"><input type="button" value="Continue..." onClick="changeDisplay('intro')">
+</div>
 
 
 
