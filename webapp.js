@@ -1,3 +1,7 @@
 // JavaScript Document
 
-$("p").fade("slow");
+$(document).ready(function() {
+    $('button').click(function() {
+        $('div').fadeOut('fast');
+    });
+});
