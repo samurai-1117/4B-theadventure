@@ -48,14 +48,9 @@ function changeDisplay(choice) {
 			btns = btn1 + btn2;
 			break;
 		case "death1":
-		document.getElementById("story").innerHTML = "You decide to fight it. You take a swing at it, but you miss. It bites you, before jumping on you and biting your neck, instantly killing you. You die. Alone. Stranded.";
-				btn1 = document.createElement("BUTTON");
-			btn1.setAttribute("onClick", "changeDisplay('pet')");
-			btn1.innerHTML = "try to pet it";
-			btn2 = document.createElement("BUTTON");
-			btn2.setAttribute("onClick", "changeDisplay('death1')");
-			btn2.innerHTML = "attack the animal";
-				break;
+		document.getElementById("story").innerHTML = "You decide to fight it. You take a swing at it, but you miss. It bites you, before jumping on you and biting your neck, instantly killing you. You die. Alone. Stranded. THE END";
+	
+			break;
 		case "west":
 			// copy code from above and adjust
 	}
