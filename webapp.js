@@ -1,5 +1,8 @@
 // JavaScript Document
 
+<<<<<<< HEAD
+
+=======
 function changeDisplay(choice) {
 	var story = "";
 	//var pic = "";
@@ -76,3 +79,4 @@ function changeDisplay(choice) {
 	document.getElementById("buttons").appendChild(btn1);
     document.getElementById("buttons").appendChild(btn2);
 }
+>>>>>>> Version-1.0
