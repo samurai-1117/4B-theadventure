@@ -9,14 +9,14 @@ Insert answer here.
 
 ### Insert question here?
 Insert answer here.
-
+-->
 ## Changelog
 
 ### Version 1.1
+The Version 1.1 has cookies and helps with saving and loading. 
 
 #### Bug fixes
- * Fixed thing
- * Fixed other thing
+ * Fixed the problem where the start over button brings you back to the introduction
 
 #### Changes
  * Added thing
