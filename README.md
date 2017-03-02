@@ -36,7 +36,7 @@ Our initial realease only has 2 different outcomes for the ending,but later on w
 ## Credits
 * Joshua Dedios
 * James Zhang
-* Alica Wu
+* Alicia Wu
 * Jayden cheung
 * Pierce Dyal
 * Parker Benson
