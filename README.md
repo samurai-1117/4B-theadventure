@@ -1,5 +1,4 @@
-# Put your app name here!
-Stranded
+# Stranded
 ## Description
 Stranded is a text-based, choose your own adventure. Every decision you make changes the ending of your story. You'll be facing hard challanges, befriending and killing strange monsters. And trying to escape the island.
 
