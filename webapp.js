@@ -59,7 +59,7 @@ function changeDisplay(choice) {
 			btn2 = "";
 			break;
 			case "credits1":
-			story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Joshua Dedios, Jayden Cheung, Pierce Dyal<br>Copyright 2017 By ThePeople™ ";
+			story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu,Pierce Dyal<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Joshua Dedios, Jayden Cheung, Pierce Dyal<br>Copyright 2017 By ThePeople™ ";
 			btn1.setAttribute("onClick", "location.reload();");
 			btn1.innerHTML = "Start over";
 			btn2 = "";
