@@ -1,7 +1,9 @@
 # Stranded
 
-## Description
-Stranded is a text-based, choose your own adventure. Every decision you make changes the ending of your story. You'll be facing hard challanges, befriending and killing strange monsters. And trying to escape the island.
+
+
+## Stranded is a text-based, choose your own adventure. Every decision you make changes the ending of your story. You'll be facing hard challanges, befriending and killing strange monsters. And trying to escape the island.
+
 
 <!--
 ## FAQs
@@ -15,10 +17,10 @@ Insert answer here.
 ## Changelog
 
 ### Version 1.1
+The Version 1.1 has cookies and helps with saving and loading. 
 
 #### Bug fixes
- * Fixed thing
- * Fixed other thing
+ * Fixed the problem where the start over button brings you back to the introduction
 
 #### Changes
  * Added thing
@@ -38,7 +40,7 @@ Our initial realease only has 2 different outcomes for the ending,but later on w
 ## Credits
 * Joshua Dedios
 * James Zhang
-* Alica Wu
+* Alicia Wu
 * Jayden cheung
 * Pierce Dyal
 * Parker Benson
