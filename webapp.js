@@ -97,7 +97,7 @@ function changeDisplay(choice) {
 			story = "You let the animals eat the meat, but they still give you some anyway. You make a fire with some extra wood. You stick a piece of wood through the meat and cook it in the fire. As shadows grow in the forest, you start to feel tired and so go into your hut and lay down to sleep. The next morning you wake up to loud thumps. You go to the beach with Bob and Lavender hot on your trail. You see a monster that looks about 10 feet tall, with all of its body parts rock. It looks at you and challenges you. Bob runs forward and rips off the arms of the rock monster. However, the rock monster regrows those arms and begins to chuck rocks at you. What will you do? Will you dodge the rocks? Or will you call for help?" ;
 			btn1.setAttribute("onClick", "changeDisplay('death 3')");
 			btn1.innerHTML = "Dogde the rocks";
-			btn2.setAttribute("onClick", "changeDisplay('Call for help')");
+			btn2.setAttribute("onClick", "changeDisplay('Win 1')");
 			btn2.innerHTML = "Call for help";
 			break;
 			
@@ -109,7 +109,7 @@ function changeDisplay(choice) {
 			btn2 = "";
 			break;
 			
-			case "Call for help":
+			case "Win 1":
 			// change story text
 			story = "You call for help and Lavender pushes you away right as a rock comes soaring at you. She is unable to dodge the rock and gets crushed. Bob helps you lift the rock off and you find Lavender heavily wounded. You run up to the rock monster in anger and your hand magically lights up. You punch it and it explodes. As you celebrate this victory, you see a helicopter in the distance. When it finally arrives, you bring Lavender and Bob and you fly back to society. Not alone. Not stranded.";
 			btn1.setAttribute("onClick", "changeDisplay('credits1')");
@@ -121,7 +121,7 @@ function changeDisplay(choice) {
 			
 		case "credits1":
 			save_cookies("intro");
-			story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu,Pierce Dyal<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Joshua Dedios, Jayden Cheung, Pierce Dyal<br>Copyright 2017 By ThePeople™ ";
+			story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu, Pierce Dyal<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Jayden Cheung, Pierce Dyal<br> Cookie Coder : Jousha Dedios<br>Copyright 2017 By ThePeople™ ";
 			btn1.setAttribute("onClick", "location.reload();");
 			btn1.innerHTML = "Start over";
 			btn2 = "";
