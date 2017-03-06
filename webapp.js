@@ -59,41 +59,76 @@ function changeDisplay(choice) {
 			btn1.innerHTML = "Start over";
 			btn2 = "";
 			break;
-		case "death3":
+		
+			break;
+		case "dodge":
+		save_cookies("dodge");
+			// change story text
+			story = "You dodge as the creature stampedes at you and a wild blur of orange and black jumps and attack it. Once you are safely on the sidelines, you see that the animal that attacked the rhino creature is a tiger. The tiger bites the creature’s neck and it dies. You can use the stone that you obtained earlier to skin the rhino and take the meat out or let the tiger and Lavender eat it. What will you do? Will you skin the rhino? Or will you let the animals eat it?";
+			btn1.setAttribute("onClick", "changeDisplay('Skin rhino')");
+			btn1.innerHTML = "Skin the rhino";
+			btn2.setAttribute("onClick", "changeDisplay('Let the animals eat it')");
+			btn2.innerHTML = "Let the animals eat it";
+			break;
+			case "Skin rhino":
+			// change story text
+			story = "You skin the rhino and take the meat out. You bring the meat back to the hut and make a fire with some extra wood. You stick a piece of wood through the meat and cook it in the fire. Lavender jumped down and laid down next to you, closely followed by the tiger . . . which began morphing into a very familiar creature with white fur and turquoise gems around its neck. It is the animal that was drinking water from earlier! You decide to name him Bob. As the meat begins to blacken slightly, you look over to Bob and Lavender. You can either eat all of it yourself or give some to Bob and Lavender. What will you do? Will you eat it all yourself? Or will you give some to the animals?";
+		btn1.setAttribute("onClick", "changeDisplay('Eat it all yourself')");
+			btn1.innerHTML = "Eat it all yourself";
+			btn2.setAttribute("onClick", "changeDisplay('Give some to the animals')");
+			btn2.innerHTML = "Give some to the animals";
+			break;
+			
+			case "Eat it all yourself":
+				story = "Will be released soon";
+		btn1.setAttribute("onClick", "location.reload();");
+			btn1.innerHTML = "Start over";
+			btn2 = "";
+			break;
+			
+ 					case "Give some to the animals":
+				story = "Will be released soon";
+		btn1.setAttribute("onClick", "location.reload();");
+			btn1.innerHTML = "Start over";
+			btn2 = "";
+			break;
+			case "Let the animals eat it":
+			// change story text
+			story = "You let the animals eat the meat, but they still give you some anyway. You make a fire with some extra wood. You stick a piece of wood through the meat and cook it in the fire. As shadows grow in the forest, you start to feel tired and so go into your hut and lay down to sleep. The next morning you wake up to loud thumps. You go to the beach with Bob and Lavender hot on your trail. You see a monster that looks about 10 feet tall, with all of its body parts rock. It looks at you and challenges you. Bob runs forward and rips off the arms of the rock monster. However, the rock monster regrows those arms and begins to chuck rocks at you. What will you do? Will you dodge the rocks? Or will you call for help?" ;
+			btn1.setAttribute("onClick", "changeDisplay('death 3')");
+			btn1.innerHTML = "Dogde the rocks";
+			btn2.setAttribute("onClick", "changeDisplay('Call for help')");
+			btn2.innerHTML = "Call for help";
+			break;
+			
+			case "death 3":
 			// change story text
 			story = "You try to dodge the rocks, but you get crushed to death. Alone. Stranded";
 			btn1.setAttribute("onClick", "location.reload();");
 			btn1.innerHTML = "Start over";
 			btn2 = "";
 			break;
-		case "dodge":
-		save_cookies("dodge");
-			// change story text
-			story = "You dodge as the creature stampedes at you and a wild blur of orange and black jumps and attack it. Once you are safely on the sidelines, you see that the animal that attacked the rhino creature is a tiger. The tiger bites the creature’s neck and it dies. You skin the rhino and take the meat out. You bring the meat back to the hut and make a fire with some extra wood. You stick a piece of wood through the meat and cook it in the fire. Lavender jumped down and laid down next to you, closely followed by the tiger . . . which began morphing into a very familiar creature with white fur and turquoise gems around its neck. It is the animal that was drinking water from earlier! You decide to name him Bob. As the meat begins to blacken slightly, you look over to Bob and Lavender. You give some of the meat to Bob and Lavender before eating some for yourself. As shadows grow in the forest, you start to feel tired and so go into your hut and lay down to sleep. The next morning you wake up to loud thumps. You go to the beach with Bob and Lavender hot on your trail. You see a monster that looks about 10 feet tall, with all of its body parts rock. It looks at you and challenges you. Bob runs forward and rips off the arms of the rock monster. However, the rock monster regrows those arms and begins to chuck rocks at you. What will you do? Will you dodge the rocks? Or will you call for help?";
-			btn1.setAttribute("onClick", "changeDisplay('death3')");
-			btn1.innerHTML = "Try to dodge the rocks";
-			btn2.setAttribute("onClick", "changeDisplay('call for help')");
-			btn2.innerHTML = "Call for help";
-			break;
-			case "call for help":
+			
+			case "Call for help":
 			// change story text
 			story = "You call for help and Lavender pushes you away right as a rock comes soaring at you. She is unable to dodge the rock and gets crushed. Bob helps you lift the rock off and you find Lavender heavily wounded. You run up to the rock monster in anger and your hand magically lights up. You punch it and it explodes. As you celebrate this victory, you see a helicopter in the distance. When it finally arrives, you bring Lavender and Bob and you fly back to society. Not alone. Not stranded.";
 			btn1.setAttribute("onClick", "changeDisplay('credits1')");
 			btn1.innerHTML = "Rescued...";
 			btn2 = "";
 			break;
-<<<<<<< HEAD
-			case "credits1":
-			story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Joshua Dedios, Jayden Cheung,Pierce Dyal<br>Copyright 2017 By ThePeople™ ";
-=======
+			
+			
+			
 		case "credits1":
 			save_cookies("intro");
 			story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu,Pierce Dyal<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Joshua Dedios, Jayden Cheung, Pierce Dyal<br>Copyright 2017 By ThePeople™ ";
->>>>>>> 1.1
 			btn1.setAttribute("onClick", "location.reload();");
 			btn1.innerHTML = "Start over";
 			btn2 = "";
 	}
+	
+
+	
 	
 	document.getElementById("story").innerHTML = story;
 	//document.getElementById("picture").setAttribute("src", pic);
