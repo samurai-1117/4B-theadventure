@@ -30,6 +30,6 @@ Our initial realease only has 2 different outcomes for the ending, but later on 
 * Joshua Dedios
 * James Zhang
 * Alicia Wu
-* Jayden cheung
+* Jayden Cheung
 * Pierce Dyal
 * Parker Benson
