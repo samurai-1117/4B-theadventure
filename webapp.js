@@ -1,5 +1,27 @@
 // JavaScript Document
 
+window.onload = load_cookies;
+
+function save_cookies(story) {
+	var d = new Date();
+	d.setTime(d.getTime() + (120*24*60*60*1000));
+	var expires = "expires="+ d.toUTCString();
+	
+	document.cookie = "case=" + story + "; " + expires;
+}
+
+function load_cookies() {
+	var x = document.cookie;
+	x = x.split("; ");
+	for( var i = 0; i<x.length; i++) {
+		var temp =x[i].split("=");
+		// temp = ["username", "John Doe"]
+		if(temp[0]=="case") {
+			changeDisplay(temp[1]);
+		}
+	}
+}
+
 function changeDisplay(choice) {
 	var story = "";
 	//var pic = "";
@@ -16,6 +38,7 @@ function changeDisplay(choice) {
 			btn2.innerHTML = "Attack the animal";
 			break;
 		case "pet":
+			save_cookies("pet");
 			// change story text
 			story = "You decide to pet the animal. Its fur feels silky to the touch and as you continue to study her, you decide to name her Lavender, because of the unique color of her fur. Lavender moves away from your touch and you follow her, curious to where she was going. She leads you to some stones. You couldn’t help but feel impressed as you begin to grasp her idea. You use the stones to cut down some trees in the area. You continue to cut the wood into smaller pieces and afterward gather leaves. After gathering all your materials, you use the wood and leaves to build a hut. You decide to go back to the plane to see if there are any metal pieces that you can use. But among the ruins of the plane crash, you see a very strange looking creature. It had the overall shape of a rhino, but it was green overall, with a very mossy look. Where the horns of a rhino would have been were two branches of flowers. When this creature notices you, it charges. What will you do? Will you dodge? Or will you try to stop it?";
 			btn1.setAttribute("onClick", "changeDisplay('dodge')");
@@ -36,7 +59,7 @@ function changeDisplay(choice) {
 			btn1.innerHTML = "Start over";
 			btn2 = "";
 			break;
-			case "death3":
+		case "death3":
 			// change story text
 			story = "You try to dodge the rocks, but you get crushed to death. Alone. Stranded";
 			btn1.setAttribute("onClick", "location.reload();");
@@ -44,6 +67,7 @@ function changeDisplay(choice) {
 			btn2 = "";
 			break;
 		case "dodge":
+		save_cookies("dodge");
 			// change story text
 			story = "You dodge as the creature stampedes at you and a wild blur of orange and black jumps and attack it. Once you are safely on the sidelines, you see that the animal that attacked the rhino creature is a tiger. The tiger bites the creature’s neck and it dies. You skin the rhino and take the meat out. You bring the meat back to the hut and make a fire with some extra wood. You stick a piece of wood through the meat and cook it in the fire. Lavender jumped down and laid down next to you, closely followed by the tiger . . . which began morphing into a very familiar creature with white fur and turquoise gems around its neck. It is the animal that was drinking water from earlier! You decide to name him Bob. As the meat begins to blacken slightly, you look over to Bob and Lavender. You give some of the meat to Bob and Lavender before eating some for yourself. As shadows grow in the forest, you start to feel tired and so go into your hut and lay down to sleep. The next morning you wake up to loud thumps. You go to the beach with Bob and Lavender hot on your trail. You see a monster that looks about 10 feet tall, with all of its body parts rock. It looks at you and challenges you. Bob runs forward and rips off the arms of the rock monster. However, the rock monster regrows those arms and begins to chuck rocks at you. What will you do? Will you dodge the rocks? Or will you call for help?";
 			btn1.setAttribute("onClick", "changeDisplay('death3')");
@@ -58,8 +82,14 @@ function changeDisplay(choice) {
 			btn1.innerHTML = "Rescued...";
 			btn2 = "";
 			break;
+<<<<<<< HEAD
 			case "credits1":
 			story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Joshua Dedios, Jayden Cheung,Pierce Dyal<br>Copyright 2017 By ThePeople™ ";
+=======
+		case "credits1":
+			save_cookies("intro");
+			story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu,Pierce Dyal<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Joshua Dedios, Jayden Cheung, Pierce Dyal<br>Copyright 2017 By ThePeople™ ";
+>>>>>>> 1.1
 			btn1.setAttribute("onClick", "location.reload();");
 			btn1.innerHTML = "Start over";
 			btn2 = "";
