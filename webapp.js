@@ -1,5 +1,4 @@
 // JavaScript Document
-
 window.onload = load_cookies;
 
 function save_cookies(story) {
@@ -69,7 +68,7 @@ function changeDisplay(choice) {
 			btn2.setAttribute("onClick", "changeDisplay('Let the animals eat it')");
 			btn2.innerHTML = "Let the animals eat it";
 			break;
-			case "Skin rhino":
+		case "Skin rhino":
 			save_cookies("Skin rhino");
 			// change story text
 			story = "You skin the rhino and take the meat out. You bring the meat back to the hut and make a fire with some extra wood. You stick a piece of wood through the meat and cook it in the fire. Lavender jumped down and laid down next to you, closely followed by the tiger . . . which began morphing into a very familiar creature with white fur and turquoise gems around its neck. It is the animal that was drinking water from earlier! You decide to name him Bob. As the meat begins to blacken slightly, you look over to Bob and Lavender. You can either eat all of it yourself or give some to Bob and Lavender. What will you do? Will you eat it all yourself? Or will you give some to the animals?";
@@ -81,10 +80,10 @@ function changeDisplay(choice) {
 			
 			case "death4":
 				story = "You eat all of the meat yourself. The animals look at you with anger but neither do anything. As shadows grow in the forest, you start to feel tired and so go into your hut and lay down to sleep. The next morning you wake up to loud thumps. You go to the beach with Bob and Lavender behind you. You see a monster that looks about 10 feet tall, with all of its body parts rock. It looks at you and challenges you. You run forward and get feebly squashed by the rock monster, Bob and Lavender doing nothing to stop your death. You die. Alone. Stranded.";
-		btn1.setAttribute("onClick", "location.reload();");
-			btn1.innerHTML = "Start over";
-			btn2 = "";
-			break;
+				btn1.setAttribute("onClick", "location.reload();");
+				btn1.innerHTML = "Start over";
+				btn2 = "";
+				break;
 			
  					case "Give some to the animals":
 				story = "You give some of the meat to Bob and Lavender before eating some for yourself. As shadows grow in the forest, you start to feel tired and so go into your hut and lay down to sleep. The next morning you wake up to loud thumps. You go to the beach with Bob and Lavender hot on your trail. You see a monster that looks about 10 feet tall, with all of its body parts rock. It looks at you and challenges you. Bob runs forward and rips off the arms of the rock monster. However, the rock monster regrows those arms and begins to chuck rocks at you. What will you do? Will you dodge the rocks? Or will you call for help?";
@@ -93,42 +92,44 @@ function changeDisplay(choice) {
 			btn2.setAttribute("onClick", "changeDisplay('Win 1')");
 			btn2.innerHTML = "Call for help";
 			break;
+			
 			case "Let the animals eat it":
-			save_cookies("Let the animals eat it");
-			// change story text
-			story = "You let the animals eat the meat, but they still give you some anyway. You make a fire with some extra wood. You stick a piece of wood through the meat and cook it in the fire. As shadows grow in the forest, you start to feel tired and so go into your hut and lay down to sleep. The next morning you wake up to loud thumps. You go to the beach with Bob and Lavender hot on your trail. You see a monster that looks about 10 feet tall, with all of its body parts rock. It looks at you and challenges you. Bob runs forward and rips off the arms of the rock monster. However, the rock monster regrows those arms and begins to chuck rocks at you. What will you do? Will you dodge the rocks? Or will you call for help?" ;
-			btn1.setAttribute("onClick", "changeDisplay('death 3')");
-			btn1.innerHTML = "Dogde the rocks";
-			btn2.setAttribute("onClick", "changeDisplay('Win 1')");
-			btn2.innerHTML = "Call for help";
-			break;
+				save_cookies("Let the animals eat it");
+				// change story text
+				story = "You let the animals eat the meat, but they still give you some anyway. You make a fire with some extra wood. You stick a piece of wood through the meat and cook it in the fire. As shadows grow in the forest, you start to feel tired and so go into your hut and lay down to sleep. The next morning you wake up to loud thumps. You go to the beach with Bob and Lavender hot on your trail. You see a monster that looks about 10 feet tall, with all of its body parts rock. It looks at you and challenges you. Bob runs forward and rips off the arms of the rock monster. However, the rock monster regrows those arms and begins to chuck rocks at you. What will you do? Will you dodge the rocks? Or will you call for help?" ;
+				btn1.setAttribute("onClick", "changeDisplay('death 3')");
+				btn1.innerHTML = "Dogde the rocks";
+				btn2.setAttribute("onClick", "changeDisplay('Win 1')");
+				btn2.innerHTML = "Call for help";
+				break;
 			
 			
 			
 			case "death 3":
-			// change story text
-			story = "You try to dodge the rocks, but you get crushed to death. Alone. Stranded";
-			btn1.setAttribute("onClick", "location.reload();");
-			btn1.innerHTML = "Start over";
-			btn2 = "";
-			break;
+				// change story text
+				story = "You try to dodge the rocks, but you get crushed to death. Alone. Stranded";
+				btn1.setAttribute("onClick", "location.reload();");
+				btn1.innerHTML = "Start over";
+				btn2 = "";
+				break;
 			
 			case "Win 1":
-			// change story text
-			story = "You call for help and Lavender pushes you away right as a rock comes soaring at you. She is unable to dodge the rock and gets crushed. Bob helps you lift the rock off and you find Lavender heavily wounded. You run up to the rock monster in anger and your hand magically lights up. You punch it and it explodes. As you celebrate this victory, you see a helicopter in the distance. When it finally arrives, you bring Lavender and Bob and you fly back to society. Not alone. Not stranded.";
-			btn1.setAttribute("onClick", "changeDisplay('credits1')");
-			btn1.innerHTML = "Rescued...";
-			btn2 = "";
-			break;
+				// change story text
+				story = "You call for help and Lavender pushes you away right as a rock comes soaring at you. She is unable to dodge the rock and gets crushed. Bob helps you lift the rock off and you find Lavender heavily wounded. You run up to the rock monster in anger and your hand magically lights up. You punch it and it explodes. As you celebrate this victory, you see a helicopter in the distance. When it finally arrives, you bring Lavender and Bob and you fly back to society. Not alone. Not stranded.";
+				btn1.setAttribute("onClick", "changeDisplay('credits1')");
+				btn1.innerHTML = "Rescued...";
+				btn2 = "";
+				break;
 			
 			
 			
-		case "credits1":
-			save_cookies("intro");
-			story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu, Pierce Dyal<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Jayden Cheung, Pierce Dyal<br> Cookie Coder :Jousha Dedios<br>Copyright 2017 By ThePeople ™ ";
-			btn1.setAttribute("onClick", "location.reload();");
-			btn1.innerHTML = "Start over";
-			btn2 = "";
+			case "credits1":
+				save_cookies("intro");
+				story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu, Pierce Dyal<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Jayden Cheung, Pierce Dyal<br> Cookie Coder :Jousha Dedios<br>Copyright 2017 By ThePeople ™ ";
+				btn1.setAttribute("onClick", "location.reload();");
+				btn1.innerHTML = "Start over";
+				btn2 = "";
+				break;
 	}
 	
 
