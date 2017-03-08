@@ -70,16 +70,17 @@ function changeDisplay(choice) {
 			btn2.innerHTML = "Let the animals eat it";
 			break;
 			case "Skin rhino":
+			save_cookies("Skin rhino");
 			// change story text
 			story = "You skin the rhino and take the meat out. You bring the meat back to the hut and make a fire with some extra wood. You stick a piece of wood through the meat and cook it in the fire. Lavender jumped down and laid down next to you, closely followed by the tiger . . . which began morphing into a very familiar creature with white fur and turquoise gems around its neck. It is the animal that was drinking water from earlier! You decide to name him Bob. As the meat begins to blacken slightly, you look over to Bob and Lavender. You can either eat all of it yourself or give some to Bob and Lavender. What will you do? Will you eat it all yourself? Or will you give some to the animals?";
-		btn1.setAttribute("onClick", "changeDisplay('Eat it all yourself')");
+		btn1.setAttribute("onClick", "changeDisplay('death4')");
 			btn1.innerHTML = "Eat it all yourself";
 			btn2.setAttribute("onClick", "changeDisplay('Give some to the animals')");
 			btn2.innerHTML = "Give some to the animals";
 			break;
 			
-			case "Eat it all yourself":
-				story = "Will be released soon";
+			case "death4":
+				story = "You eat all of the meat yourself. The animals look at you with anger but neither do anything. As shadows grow in the forest, you start to feel tired and so go into your hut and lay down to sleep. The next morning you wake up to loud thumps. You go to the beach with Bob and Lavender behind you. You see a monster that looks about 10 feet tall, with all of its body parts rock. It looks at you and challenges you. You run forward and get feebly squashed by the rock monster, Bob and Lavender doing nothing to stop your death. You die. Alone. Stranded.";
 		btn1.setAttribute("onClick", "location.reload();");
 			btn1.innerHTML = "Start over";
 			btn2 = "";
@@ -100,6 +101,8 @@ function changeDisplay(choice) {
 			btn2.setAttribute("onClick", "changeDisplay('Win 1')");
 			btn2.innerHTML = "Call for help";
 			break;
+			
+			
 			
 			case "death 3":
 			// change story text
