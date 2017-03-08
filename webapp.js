@@ -60,7 +60,6 @@ function changeDisplay(choice) {
 			btn2 = "";
 			break;
 		
-			break;
 		case "dodge":
 		save_cookies("dodge");
 			// change story text
@@ -93,6 +92,7 @@ function changeDisplay(choice) {
 			btn2 = "";
 			break;
 			case "Let the animals eat it":
+			save_cookies("Let the animals eat it");
 			// change story text
 			story = "You let the animals eat the meat, but they still give you some anyway. You make a fire with some extra wood. You stick a piece of wood through the meat and cook it in the fire. As shadows grow in the forest, you start to feel tired and so go into your hut and lay down to sleep. The next morning you wake up to loud thumps. You go to the beach with Bob and Lavender hot on your trail. You see a monster that looks about 10 feet tall, with all of its body parts rock. It looks at you and challenges you. Bob runs forward and rips off the arms of the rock monster. However, the rock monster regrows those arms and begins to chuck rocks at you. What will you do? Will you dodge the rocks? Or will you call for help?" ;
 			btn1.setAttribute("onClick", "changeDisplay('death 3')");
