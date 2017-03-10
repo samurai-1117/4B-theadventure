@@ -15,9 +15,14 @@
 
 body {
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+<<<<<<< HEAD
 	color: #0C1D8C;
 	background-image: url("images/plane.png");
 	background: url('images/plane.png') no-repeat; 
+=======
+	color: #D6E5FF;
+	background-image: url("images/island.jpg");
+>>>>>>> origin/CSS
 	background-size: 100%;
 	text-size: 100px;
 
