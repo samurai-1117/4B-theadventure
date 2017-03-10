@@ -88,7 +88,7 @@ function changeDisplay(choice) {
 			break;
 			
 			case "death4":
-				story = "You eat all of the meat yourself. The animals look at you with anger but neither do anything. As shadows grow in the forest, you start to feel tired and so go into your hut and lay down to sleep. The next morning you wake up to loud thumps. You go to the beach with Bob and Lavender behind you. You see a monster that looks about 10 feet tall, with all of its body parts rock. It looks at you and challenges you. You run forward and get feebly squashed by the rock monster, Bob and Lavender doing nothing to stop your death. You die. Alone. Stranded.";
+				story = "You cook and eat all of the meat yourself. The animals look at you with anger but neither do anything. As shadows grow in the forest, you start to feel tired and so go into your hut and lay down to sleep. The next morning you wake up to loud thumps. You go to the beach with Bob and Lavender behind you. You see a monster that looks about 10 feet tall, with all of its body parts rock. It looks at you and challenges you. You run forward and get feebly squashed by the rock monster, Bob and Lavender doing nothing to stop your death. You die. Alone. Stranded.";
 				btn1.setAttribute("onClick", "location.reload();");
 				btn1.innerHTML = "Start over";
 				btn2 = "";
@@ -133,7 +133,7 @@ function changeDisplay(choice) {
 			
 			
 			case "credits1":
-				save_cookies("intro");
+				save_cookies("start");
 				story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu, Pierce Dyal<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Jayden Cheung, Pierce Dyal<br> Cookie Coder :Jousha Dedios<br>Copyright 2017 By ThePeople ™ ";
 				btn1.setAttribute("onClick", "location.reload();");
 				btn1.innerHTML = "Start over";
