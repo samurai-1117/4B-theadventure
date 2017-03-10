@@ -28,6 +28,15 @@ function changeDisplay(choice) {
 	var btn2 = document.createElement("BUTTON");
 	
 	switch(choice) {
+		
+		case "start":
+			// change story text
+		story = "You were on a plane trip to Hawaii to visit family and friends. Everything was going smoothly until you see a strange blue mist form around the plane. ~~~ You are now the only survivor of a plane crash which has landed you on an island you didn't even know existed. You will now face many trials such as fighting monsters and defending for yourself. Are you up for the challenge? Or will you die on this island? Alone. Stranded.";
+			btn1.setAttribute("onClick", "changeDisplay('intro')");
+			btn1.innerHTML = "Continue...";	
+		    btn2 ="";
+			break;
+		
 		case "intro":
 			// change story text
 		story = "You wake up among the ruins of a very apparent plane crash. Pieces of the plane lay around you, some still in flames. You quickly pull yourself out of your stupor and run out of the rubble. In front of you there is a forest. You decide to go inside the forest to look for supplies. You see an apple on a tree. But it isn’t any normal apple. Its color is gold, shiny and tempting. Unable to tear your eyes away from it, you take the apple and follow the sound of running water to a river. There you see an animal drinking water from a lake. The creature is like a white wolf, but it has turquoise gems come out of its fur, in the area that might be a mane for a lion. After it looked up at you, it ran away. Suddenly you hear some noise like an animal moving around. You follow the noise to see an animal like a purple tiger with two long horns at the top of its head. It’s laying on a tree branch. What will you do? Will you fight it? Or will you pet it?";
