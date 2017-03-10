@@ -24,7 +24,7 @@ The Version 1.1 has cookies and helps with saving and loading.
  * Added loading
 
 ### Version 1.0
-Our initial realease only has 2 different outcomes for the ending, but later on we will add more endings and story lines!
+Our initial release only has 2 different outcomes for the ending, but later on we will add more endings and story lines!
 
 ## Credits
 * Joshua Dedios
