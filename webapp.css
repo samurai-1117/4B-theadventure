@@ -15,14 +15,25 @@
 
 body {
 	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+
 	color: #0C1D8C;
-	background-image: url("images/island.jpg");
-	background-size: 100%;
+	background-image: url("images/plane.png");
+	background: url('images/plane.png') no-repeat; 
+
+	color: #D6E5FF;
+	background-size: 99%;
 	text-size: 100px;
 
 }
 
+
 div{
 	opacity:1;
+	
+}
+
+#imagestranded {
+	transform: translate(500,-500)
+	
 	
 }
