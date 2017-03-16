@@ -28,7 +28,11 @@ function changeDisplay(choice) {
 	var btn2 = document.createElement("BUTTON");
 	
 	switch(choice) {
-		
+		case "loadingscreen":
+			story = "";
+			btn1.setAttribute("onClick", "changeDisplay('start')");
+			 btn1.innerHTML = "Start"
+			
 		case "start":
 			// change story text
 		story = "You were on a plane trip to Hawaii to visit family and friends. Everything was going smoothly until you see a strange blue mist form around the plane. ~~~ You are now the only survivor of a plane crash which has landed you on an island you didn't even know existed. You will now face many trials such as fighting monsters and defending for yourself. Are you up for the challenge? Or will you die on this island? Alone. Stranded.";
@@ -134,7 +138,7 @@ function changeDisplay(choice) {
 			
 			case "credits1":
 				save_cookies("start");
-				story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu, Pierce Dyal<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Jayden Cheung, Pierce Dyal<br> Cookie Coder :Jousha Dedios<br>Copyright 2017 By ThePeople ™ ";
+				story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu, Pierce Dyal<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Jayden Cheung, Pierce Dyal<br> Cookie Coder : Jousha Dedios<br>Copyright 2017 By ThePeople ™ ";
 				btn1.setAttribute("onClick", "location.reload();");
 				btn1.innerHTML = "Start over";
 				btn2 = "";
