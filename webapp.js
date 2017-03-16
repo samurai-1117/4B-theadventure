@@ -85,6 +85,7 @@ function changeDisplay(choice) {
 			btn2.innerHTML = "Let the animals eat it";
 			break;
 		case "Skin rhino":
+		sanity-=10;
 			save_cookies("Skin rhino");
 			// change story text
 			story = "You skin the rhino and take the meat out. You bring the meat back to the hut and make a fire with some extra wood. You stick a piece of wood through the meat and cook it in the fire. Lavender jumped down and laid down next to you, closely followed by the tiger . . . which began morphing into a very familiar creature with white fur and turquoise gems around its neck. It is the animal that was drinking water from earlier! You decide to name him Bob. As the meat begins to blacken slightly, you look over to Bob and Lavender. You can either eat all of it yourself or give some to Bob and Lavender. What will you do? Will you eat it all yourself? Or will you give some to the animals?";
