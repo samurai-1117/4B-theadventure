@@ -1,6 +1,8 @@
 // JavaScript Document
 window.onload = load_cookies;
 
+var sanity = 100;
+
 function save_cookies(story) {
 	var d = new Date();
 	d.setTime(d.getTime() + (120*24*60*60*1000));
@@ -50,6 +52,7 @@ function changeDisplay(choice) {
 			btn2.innerHTML = "Attack the animal";
 			break;
 		case "pet":
+			sanity+=10;
 			save_cookies("pet");
 			// change story text
 			story = "You decide to pet the animal. Its fur feels silky to the touch and as you continue to study her, you decide to name her Lavender, because of the unique color of her fur. Lavender moves away from your touch and you follow her, curious to where she was going. She leads you to some stones. You couldn’t help but feel impressed as you begin to grasp her idea. You use the stones to cut down some trees in the area. You continue to cut the wood into smaller pieces and afterward gather leaves. After gathering all your materials, you use the wood and leaves to build a hut. You decide to go back to the plane to see if there are any metal pieces that you can use. But among the ruins of the plane crash, you see a very strange looking creature. It had the overall shape of a rhino, but it was green overall, with a very mossy look. Where the horns of a rhino would have been were two branches of flowers. When this creature notices you, it charges. What will you do? Will you dodge? Or will you try to stop it?";
@@ -144,7 +147,10 @@ function changeDisplay(choice) {
 				btn2 = "";
 				break;
 	}
-	
+	if (sanity>100) {
+		sanity =100;
+	}
+	document.getElementById("sanity").value = sanity;
 
 	
 	
