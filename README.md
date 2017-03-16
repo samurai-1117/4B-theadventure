@@ -1,8 +1,7 @@
 # Stranded
 
-
-
-## Stranded is a text-based, choose your own adventure. Every decision you make changes the ending of your story. You'll be facing hard challanges, befriending and killing strange monsters. And trying to escape the island.
+## Description
+Stranded is a text-based, choose your own adventure. Every decision you make changes the ending of your story. You'll be facing hard challenges, befriending and killing strange monsters. And trying to escape the island. 
 
 
 <!--
@@ -13,8 +12,11 @@ Insert answer here.
 
 ### Insert question here?
 Insert answer here.
--->
+--> 
 ## Changelog
+
+### Version 1.2 
+ The version 1.2 has changed and improved storyline. 
 
 ### Version 1.1
 The Version 1.1 has cookies and helps with saving and loading. 
@@ -35,7 +37,8 @@ The Version 1.1 has cookies and helps with saving and loading.
    * - to indicate something removed, just be careful with your markdown syntax!
 
 ### Version 1.0
-Our initial realease only has 2 different outcomes for the ending,but later on we will add more endings and story lines!
+Our initial release only has 2 different outcomes for the ending, but later on we will add more endings and story lines!
+
 
 ## Credits
 * Joshua Dedios
