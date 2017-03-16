@@ -137,7 +137,7 @@ function changeDisplay(choice) {
 			
 			
 			case "credits1":
-				save_cookies("loadingscreen");
+				save_cookies("start");
 				story ="CREDITS:<br>Storyboard creators : Joshua Dedios, Alicia Wu, Pierce Dyal<br>Main coders : James Zhang, Parker Benson<br>Researchers/Supporting Coders : Jayden Cheung, Pierce Dyal<br> Cookie Coder : Jousha Dedios<br>Copyright 2017 By ThePeople ™ ";
 				btn1.setAttribute("onClick", "location.reload();");
 				btn1.innerHTML = "Start over";
